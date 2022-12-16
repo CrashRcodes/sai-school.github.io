@@ -109,7 +109,7 @@ function spawnEnemies() {
             }
 
         enemies.push(new Enemy(x, y, radius, color, velocity))
-     }, 750)
+     }, 50)
 }
 
 function animate() {
