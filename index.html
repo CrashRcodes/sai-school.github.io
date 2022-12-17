@@ -188,7 +188,7 @@ p {
 const circles = document.querySelectorAll(".circle");
 
 const colors = [
-    "#fff"
+//     "#fff"
 //   "#5600ff",
 //   "#be00df",
 //   "#f700b9",
@@ -201,6 +201,7 @@ const colors = [
 //   "#fcc900",
 //   "#e1e500",
 //   "#c3ff42"
+    "#000"
 ];
 
 circles.forEach(function (circle, index) {
@@ -230,8 +231,8 @@ function animateCircles() {
     circle.y = y;
 
     const nextCircle = circles[index + 1] || circles[0];
-    x += (nextCircle.x - x) * 0.1;
-    y += (nextCircle.y - y) * 0.1;
+    x += (nextCircle.x - x) * 0.3;
+    y += (nextCircle.y - y) * 0.3;
   });
  
   requestAnimationFrame(animateCircles);
