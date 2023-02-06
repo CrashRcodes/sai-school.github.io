@@ -37,10 +37,16 @@
     /* if device has a touch screen */
     @media (any-pointer: coarse) {
         body {
-            background-image: url(images/background.png);
+            background-color: black;
         }
         th {
             font-size: medium;
+            text-shadow: none;
+            text-shadow:
+            -1px 0px 0px black,
+            1px 0px 0px black,
+            0px -1px 0px black,
+            0px 1px 0px black;
         }
     }
 </style>
